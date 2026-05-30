@@ -1,0 +1,184 @@
+{
+  "project": "ABS XAI Layer — Chapitre 6",
+  "generated": "2026-05-29T01:43:23.654527",
+  "total_cycles": 4,
+  "violations": 2,
+  "decisions": [
+    {
+      "cycle": 1,
+      "timestamp": "01:43:23.630",
+      "state": {
+        "lambda": 0.1273,
+        "mu": 1.1535,
+        "vehicle_speed": 22.0,
+        "slip_ratios": [
+          0.1136,
+          0.1136,
+          0.1273,
+          0.1136
+        ],
+        "road": "Asphalte sec"
+      },
+      "decision": "Hold",
+      "q_values": {
+        "Build": -0.1546,
+        "Hold": -0.2181,
+        "Release": -0.4454
+      },
+      "explanation": {
+        "natural": "Le glissement est optimal (λ=0.13 ∈ [0.1, 0.3]). Sur Asphalte sec (µ=1.15), l'ABS maintient la pression pour maximiser la force de freinage tout en gardant la maîtrise.",
+        "technical": "État MDP: λ=0.1273, µ=1.1535, v=22.00 m/s\nQ-values: Q(Build)=-0.155 | Q(Hold)=-0.218 | Q(Release)=-0.445\nDécision RL: argmax Q(s,a) = Hold [Q=-0.155]\nFormule slip: λ=(v-ω·r)/v | Zone optimale: [0.1, 0.3]\nModèle Burckhardt: µ=c1·(1-e^(-c2·λ))-c3·λ",
+        "confidence": 1.0,
+        "risk": "LOW",
+        "recommendation": "OK Freinage optimal — L'ABS fonctionne correctement. Maintenez la pression sur la pédale."
+      },
+      "ocl": {
+        "satisfied": {
+          "C01": true,
+          "C02": true,
+          "C04": true,
+          "C05": true,
+          "C12": true,
+          "C24": true,
+          "C25": true,
+          "C27": true,
+          "C28": true
+        },
+        "violated": []
+      }
+    },
+    {
+      "cycle": 2,
+      "timestamp": "01:43:23.638",
+      "state": {
+        "lambda": 0.82,
+        "mu": 0.8537,
+        "vehicle_speed": 20.0,
+        "slip_ratios": [
+          0.1,
+          0.13,
+          0.82,
+          0.085
+        ],
+        "road": "Asphalte sec"
+      },
+      "decision": "Release",
+      "q_values": {
+        "Build": -1.54,
+        "Hold": -1.86,
+        "Release": -0.94
+      },
+      "explanation": {
+        "natural": "La roue glisse trop fortement (λ=0.82 > 0.3). Sur Asphalte sec (µ=0.85), un glissement excessif cause la perte de contrôle directionnel. L'ABS relâche la pression hydraulique pour débloquer la roue.",
+        "technical": "État MDP: λ=0.8200, µ=0.8537, v=20.00 m/s\nQ-values: Q(Build)=-1.540 | Q(Hold)=-1.860 | Q(Release)=-0.940\nDécision RL: argmax Q(s,a) = Release [Q=-0.940]\nFormule slip: λ=(v-ω·r)/v | Zone optimale: [0.1, 0.3]\nModèle Burckhardt: µ=c1·(1-e^(-c2·λ))-c3·λ",
+        "confidence": 0.89,
+        "risk": "HIGH",
+        "recommendation": "ATTENTION  RISQUE ÉLEVÉ — Maintenez la pression sur la pédale. L'ABS gère automatiquement le freinage. Regardez où vous voulez aller."
+      },
+      "ocl": {
+        "satisfied": {
+          "C01": true,
+          "C02": false,
+          "C04": true,
+          "C05": true,
+          "C12": true,
+          "C24": true,
+          "C25": true,
+          "C27": true,
+          "C28": true
+        },
+        "violated": [
+          "C02"
+        ]
+      }
+    },
+    {
+      "cycle": 3,
+      "timestamp": "01:43:23.644",
+      "state": {
+        "lambda": 0.5,
+        "mu": 0.05,
+        "vehicle_speed": 15.0,
+        "slip_ratios": [
+          0.4,
+          0.44,
+          0.5,
+          0.42
+        ],
+        "road": "Glace"
+      },
+      "decision": "Release",
+      "q_values": {
+        "Build": -0.9,
+        "Hold": -0.9,
+        "Release": -0.3
+      },
+      "explanation": {
+        "natural": "La roue glisse trop fortement (λ=0.50 > 0.3). Sur Glace (µ=0.05), un glissement excessif cause la perte de contrôle directionnel. L'ABS relâche la pression hydraulique pour débloquer la roue.",
+        "technical": "État MDP: λ=0.5000, µ=0.0500, v=15.00 m/s\nQ-values: Q(Build)=-0.900 | Q(Hold)=-0.900 | Q(Release)=-0.300\nDécision RL: argmax Q(s,a) = Release [Q=-0.300]\nFormule slip: λ=(v-ω·r)/v | Zone optimale: [0.1, 0.3]\nModèle Burckhardt: µ=c1·(1-e^(-c2·λ))-c3·λ",
+        "confidence": 0.89,
+        "risk": "HIGH",
+        "recommendation": "ATTENTION  RISQUE ÉLEVÉ — Maintenez la pression sur la pédale. L'ABS gère automatiquement le freinage. Regardez où vous voulez aller."
+      },
+      "ocl": {
+        "satisfied": {
+          "C01": true,
+          "C02": false,
+          "C04": true,
+          "C05": true,
+          "C12": true,
+          "C24": true,
+          "C25": true,
+          "C27": true,
+          "C28": true
+        },
+        "violated": [
+          "C02"
+        ]
+      }
+    },
+    {
+      "cycle": 4,
+      "timestamp": "01:43:23.651",
+      "state": {
+        "lambda": 0.1167,
+        "mu": 0.8,
+        "vehicle_speed": 18.0,
+        "slip_ratios": [
+          0.0833,
+          0.1,
+          0.1167,
+          0.0833
+        ],
+        "road": "Asphalte mouillé"
+      },
+      "decision": "Hold",
+      "q_values": {
+        "Build": -0.1334,
+        "Hold": -0.2499,
+        "Release": -0.4666
+      },
+      "explanation": {
+        "natural": "Le glissement est optimal (λ=0.12 ∈ [0.1, 0.3]). Sur Asphalte mouillé (µ=0.80), l'ABS maintient la pression pour maximiser la force de freinage tout en gardant la maîtrise.",
+        "technical": "État MDP: λ=0.1167, µ=0.8000, v=18.00 m/s\nQ-values: Q(Build)=-0.133 | Q(Hold)=-0.250 | Q(Release)=-0.467\nDécision RL: argmax Q(s,a) = Hold [Q=-0.133]\nFormule slip: λ=(v-ω·r)/v | Zone optimale: [0.1, 0.3]\nModèle Burckhardt: µ=c1·(1-e^(-c2·λ))-c3·λ",
+        "confidence": 1.0,
+        "risk": "LOW",
+        "recommendation": "OK Freinage optimal — L'ABS fonctionne correctement. Maintenez la pression sur la pédale."
+      },
+      "ocl": {
+        "satisfied": {
+          "C01": true,
+          "C02": true,
+          "C04": true,
+          "C05": true,
+          "C12": true,
+          "C24": true,
+          "C25": true,
+          "C27": true,
+          "C28": true
+        },
+        "violated": []
+      }
+    }
+  ]
+}
