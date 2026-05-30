@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="draw.io" version="21.0.0" type="device">
+  <diagram id="ABS-SysML-Requirements" name="ABS Requirements Diagram">
+    <mxGraphModel dx="1800" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3508" pageHeight="2480" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ===================== TITLE ===================== -->
+        <mxCell id="title" value="«requirementDiagram»&#xa;Système ABS — Catalogue Complet des Exigences SysML" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="900" y="20" width="1200" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== ROOT ===================== -->
+        <mxCell id="ABS-ROOT" value="«requirement»&#xa;ABS-ROOT&#xa;&#xa;Le système ABS doit prévenir le blocage&#xa;des roues lors d'un freinage d'urgence,&#xa;maintenir la dirigeabilité et la stabilité&#xa;du véhicule, sur toute surface routière&#xa;et dans toute condition d'adhérence." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="100" width="400" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== FAMILLE F ===================== -->
+        <mxCell id="FAM-F" value="«requirementPackage»&#xa;Famille F&#xa;Exigences Fonctionnelles" style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="100" y="320" width="300" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- F1 -->
+        <mxCell id="F1" value="«requirement»&#xa;F1 — Prévention du blocage des roues" style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="20" y="460" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F1-1" value="«requirement»&#xa;ABS-F1.1&#xa;Surveillance continue vitesse angulaire&#xa;des 4 roues indépendamment." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f0fff0;strokeColor=#82b366;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="20" y="560" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="F1-2" value="«requirement»&#xa;ABS-F1.2&#xa;Calcul du taux de glissement&#xa;λ = (v − ωr)/v." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f0fff0;strokeColor=#82b366;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="20" y="640" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="F1-3" value="«requirement»&#xa;ABS-F1.3&#xa;Détection blocage imminent&#xa;si λ &gt; λ_max (~0,20–0,25)." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f0fff0;strokeColor=#82b366;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="20" y="720" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="F1-4" value="«requirement»&#xa;ABS-F1.4&#xa;Commande réduction pression&#xa;hydraulique si glissement excessif." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f0fff0;strokeColor=#82b366;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="20" y="800" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="F1-5" value="«requirement»&#xa;ABS-F1.5&#xa;Augmentation progressive pression&#xa;dès reprise adhérence (λ &lt; λ_min)." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f0fff0;strokeColor=#82b366;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="20" y="880" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="F1-6" value="«requirement»&#xa;ABS-F1.6&#xa;Cycle réduction/maintien/augmentation&#xa;répété 4 à 20 fois/s." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f0fff0;strokeColor=#82b366;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="20" y="960" width="200" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- F2 -->
+        <mxCell id="F2" value="«requirement»&#xa;F2 — Maintien de la dirigeabilité" style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="240" y="460" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F2-1" value="«requirement»&#xa;ABS-F2.1&#xa;Force latérale maintenue sur route&#xa;sèche en freinage d'urgence." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f0fff0;strokeColor=#82b366;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="240" y="560" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="F2-2" value="«requirement»&#xa;ABS-F2.2&#xa;Force latérale maintenue sur surface&#xa;glissante (verglas, neige, mouillée)." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f0fff0;strokeColor=#82b366;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="240" y="640" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="F2-3" value="«requirement»&#xa;ABS-F2.3&#xa;Correction de trajectoire par volant&#xa;possible pendant ABS actif." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f0fff0;strokeColor=#82b366;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="240" y="720" width="200" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- F3 -->
+        <mxCell id="F3" value="«requirement»&#xa;F3 — Stabilité directionnelle" style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="460" y="460" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F3-1" value="«requirement»&#xa;ABS-F3.1&#xa;Équilibrage forces freinage G/D&#xa;pour minimiser couple de lacet." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f0fff0;strokeColor=#82b366;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="460" y="560" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="F3-2" value="«requirement»&#xa;ABS-F3.2&#xa;Limitation taux lacet sur surface&#xa;µ-split (glace/bitume asymétrique)." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f0fff0;strokeColor=#82b366;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="460" y="640" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="F3-3" value="«requirement»&#xa;ABS-F3.3&#xa;Gestion stabilité en virage&#xa;avec freinage simultané." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f0fff0;strokeColor=#82b366;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="460" y="720" width="200" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- F4 -->
+        <mxCell id="F4" value="«requirement»&#xa;F4 — Adaptation à la surface" style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="680" y="460" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F4-1" value="«requirement»&#xa;ABS-F4.1&#xa;Estimation µ en temps réel via&#xa;vitesse et décélération." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f0fff0;strokeColor=#82b366;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="680" y="560" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="F4-2" value="«requirement»&#xa;ABS-F4.2&#xa;Ajustement dynamique λ_opt&#xa;en fonction du µ estimé." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f0fff0;strokeColor=#82b366;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="680" y="640" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="F4-3" value="«requirement»&#xa;ABS-F4.3&#xa;Détection transition brusque de surface&#xa;et recalibration paramètres." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f0fff0;strokeColor=#82b366;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="680" y="720" width="200" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- F5 -->
+        <mxCell id="F5" value="«requirement»&#xa;F5 — Réponse à l'aquaplaning" style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="900" y="460" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F5-1" value="«requirement»&#xa;ABS-F5.1&#xa;Détection aquaplaning par vitesse&#xa;angulaire anormale sans décélération." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f0fff0;strokeColor=#82b366;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="900" y="560" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="F5-2" value="«requirement»&#xa;ABS-F5.2&#xa;Réduction pression freinage roue&#xa;affectée pour rétablir contact." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f0fff0;strokeColor=#82b366;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="900" y="640" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="F5-3" value="«requirement»&#xa;ABS-F5.3&#xa;Reprise contrôle normal après&#xa;résolution aquaplaning." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f0fff0;strokeColor=#82b366;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="900" y="720" width="200" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- F6 -->
+        <mxCell id="F6" value="«requirement»&#xa;F6 — Modulation pression hydraulique" style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="460" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F6-1" value="«requirement»&#xa;ABS-F6.1&#xa;Phase Diminution: fermeture vanne&#xa;admission + ouverture retour." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f0fff0;strokeColor=#82b366;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="560" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="F6-2" value="«requirement»&#xa;ABS-F6.2&#xa;Phase Maintien: fermeture simultanée&#xa;vanne admission et retour." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f0fff0;strokeColor=#82b366;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="640" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="F6-3" value="«requirement»&#xa;ABS-F6.3&#xa;Phase Augmentation: ouverture&#xa;vanne admission, retour fermée." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f0fff0;strokeColor=#82b366;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="720" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="F6-4" value="«requirement»&#xa;ABS-F6.4&#xa;Pompe retour transfère fluide&#xa;accumulateur → maître-cylindre." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f0fff0;strokeColor=#82b366;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="800" width="200" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== FAMILLE P ===================== -->
+        <mxCell id="FAM-P" value="«requirementPackage»&#xa;Famille P&#xa;Exigences de Performance" style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="320" width="300" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- P1 -->
+        <mxCell id="P1" value="«requirement»&#xa;P1 — Efficacité de freinage" style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="460" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="P1-1" value="«requirement»&#xa;ABS-P1.1&#xa;Arrêt depuis 60 mph en &lt; 150 pieds&#xa;sur surface sèche (µ ≥ 0,8)." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#fff7e6;strokeColor=#d6b656;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="560" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="P1-2" value="«requirement»&#xa;ABS-P1.2&#xa;Maintien λ_opt ∈ [0,15 ; 0,25]&#xa;pour maximiser force de freinage." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#fff7e6;strokeColor=#d6b656;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="640" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="P1-3" value="«requirement»&#xa;ABS-P1.3&#xa;Opérationnel jusqu'à 2,5 km/h,&#xa;désactivation automatique en dessous." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#fff7e6;strokeColor=#d6b656;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="720" width="200" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- P2 -->
+        <mxCell id="P2" value="«requirement»&#xa;P2 — Temps de réponse" style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1580" y="460" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="P2-1" value="«requirement»&#xa;ABS-P2.1&#xa;Cycle complet ECU&#xa;(lecture→calcul→commande) ≤ 10 ms." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#fff7e6;strokeColor=#d6b656;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1580" y="560" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="P2-2" value="«requirement»&#xa;ABS-P2.2&#xa;Temps réponse modulateur hydraulique&#xa;&lt; 20 ms (commande → changement pression)." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#fff7e6;strokeColor=#d6b656;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1580" y="640" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="P2-3" value="«requirement»&#xa;ABS-P2.3&#xa;Compensations hystérésis calculées&#xa;dans même cycle que commande principale." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#fff7e6;strokeColor=#d6b656;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1580" y="720" width="200" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- P3 -->
+        <mxCell id="P3" value="«requirement»&#xa;P3 — Performance µ-split" style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1800" y="460" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="P3-1" value="«requirement»&#xa;ABS-P3.1&#xa;Couple lacet µ-split : effort volant&#xa;conducteur moyen &lt; 50 N." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#fff7e6;strokeColor=#d6b656;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1800" y="560" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="P3-2" value="«requirement»&#xa;ABS-P3.2&#xa;Développement forces lacet &gt; 0,5 s&#xa;pour laisser temps de réaction au conducteur." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#fff7e6;strokeColor=#d6b656;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1800" y="640" width="200" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== FAMILLE S ===================== -->
+        <mxCell id="FAM-S" value="«requirementPackage»&#xa;Famille S&#xa;Sécurité &amp; Fiabilité" style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="2060" y="320" width="300" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- S1 -->
+        <mxCell id="S1" value="«requirement»&#xa;S1 — Auto-surveillance / Autodiagnostic" style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="2020" y="460" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S1-1" value="«requirement»&#xa;ABS-S1.1&#xa;BiST à chaque mise sous tension&#xa;(ECU, capteurs, modulateur)." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#ffe8e6;strokeColor=#b85450;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="2020" y="560" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="S1-2" value="«requirement»&#xa;ABS-S1.2&#xa;Vérification continue intégrité&#xa;signaux des 4 capteurs vitesse." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#ffe8e6;strokeColor=#b85450;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="2020" y="640" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="S1-3" value="«requirement»&#xa;ABS-S1.3&#xa;Diagnostic cohérence entre 4 vitesses&#xa;roue à vitesse stable (détection dérive)." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#ffe8e6;strokeColor=#b85450;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="2020" y="720" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="S1-4" value="«requirement»&#xa;ABS-S1.4&#xa;Surveillance tension alimentation ECU,&#xa;détection chute &lt; 9V." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#ffe8e6;strokeColor=#b85450;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="2020" y="800" width="200" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- S2 -->
+        <mxCell id="S2" value="«requirement»&#xa;S2 — Mode Fail-safe" style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="2240" y="460" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S2-1" value="«requirement»&#xa;ABS-S2.1&#xa;Désactivation ABS en &lt; 50 ms&#xa;sur détection défaut critique." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#ffe8e6;strokeColor=#b85450;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="2240" y="560" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="S2-2" value="«requirement»&#xa;ABS-S2.2&#xa;Circuit freinage conventionnel intégralement&#xa;fonctionnel après désactivation ABS." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#ffe8e6;strokeColor=#b85450;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="2240" y="640" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="S2-3" value="«requirement»&#xa;ABS-S2.3&#xa;Isolation canal défaillant, opération&#xa;sur canaux restants si panne partielle." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#ffe8e6;strokeColor=#b85450;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="2240" y="720" width="200" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- S3 -->
+        <mxCell id="S3" value="«requirement»&#xa;S3 — Conformité ISO 26262" style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="2460" y="460" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S3-1" value="«requirement»&#xa;ABS-S3.1&#xa;Développement conforme au processus&#xa;ISO 26262 (HW + SW)." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#ffe8e6;strokeColor=#b85450;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="2460" y="560" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="S3-2" value="«requirement»&#xa;ABS-S3.2&#xa;Niveau ASIL déterminé par HARA&#xa;couvrant ≥ 3 scénarios critiques." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#ffe8e6;strokeColor=#b85450;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="2460" y="640" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="S3-3" value="«requirement»&#xa;ABS-S3.3&#xa;Logiciel ECU conforme ASIL C/D&#xa;(100% MC/DC, pas de récursion non bornée)." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#ffe8e6;strokeColor=#b85450;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="2460" y="720" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="S3-4" value="«requirement»&#xa;ABS-S3.4&#xa;FMEA/FMEDA sur tous composants HW&#xa;pour démontrer conformité ASIL." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#ffe8e6;strokeColor=#b85450;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="2460" y="800" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="S3-5" value="«requirement»&#xa;ABS-S3.5&#xa;Documentation traçabilité complète&#xa;exigence ↔ test de vérification." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#ffe8e6;strokeColor=#b85450;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="2460" y="880" width="200" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== FAMILLE I ===================== -->
+        <mxCell id="FAM-I" value="«requirementPackage»&#xa;Famille I&#xa;Exigences d'Interface" style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1100" width="300" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- I1 -->
+        <mxCell id="I1" value="«requirement»&#xa;I1 — Interface conducteur" style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1240" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I1-1" value="«requirement»&#xa;ABS-I1.1&#xa;Témoin ABS allumé &lt; 3 s&#xa;après détection défaut." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f3edf7;strokeColor=#9673a6;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1340" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="I1-2" value="«requirement»&#xa;ABS-I1.2&#xa;Témoin ABS allumé pendant autotest,&#xa;éteint si autotest OK." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f3edf7;strokeColor=#9673a6;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1420" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="I1-3" value="«requirement»&#xa;ABS-I1.3&#xa;Aucun signal tactile/sonore additionnel&#xa;en fonctionnement normal." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f3edf7;strokeColor=#9673a6;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1500" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="I1-4" value="«requirement»&#xa;ABS-I1.4&#xa;Performance freinage indépendante&#xa;de la force pédale au-delà du seuil ABS." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f3edf7;strokeColor=#9673a6;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1580" width="200" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- I2 -->
+        <mxCell id="I2" value="«requirement»&#xa;I2 — Interface capteurs vitesse" style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="240" y="1240" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I2-1" value="«requirement»&#xa;ABS-I2.1&#xa;Réception signaux de 4 capteurs&#xa;indépendants (un par roue, en fréquence)." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f3edf7;strokeColor=#9673a6;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="240" y="1340" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="I2-2" value="«requirement»&#xa;ABS-I2.2&#xa;Fréquence échantillonnage capteurs&#xa;≥ 1 kHz par l'ECU." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f3edf7;strokeColor=#9673a6;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="240" y="1420" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="I2-3" value="«requirement»&#xa;ABS-I2.3&#xa;Filtrage parasites EM sur signaux&#xa;capteurs avant traitement algorithmique." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f3edf7;strokeColor=#9673a6;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="240" y="1500" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="I2-4" value="«requirement»&#xa;ABS-I2.4&#xa;Dérivation décélération angulaire&#xa;dω/dt à partir des signaux filtrés." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f3edf7;strokeColor=#9673a6;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="240" y="1580" width="200" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- I3 -->
+        <mxCell id="I3" value="«requirement»&#xa;I3 — Interface freinage conventionnel" style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1240" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I3-1" value="«requirement»&#xa;ABS-I3.1&#xa;Modulateur ABS intercalé entre&#xa;maître-cylindre et cylindres de roue." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f3edf7;strokeColor=#9673a6;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1340" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="I3-2" value="«requirement»&#xa;ABS-I3.2&#xa;Aucune résistance hydraulique additionnelle&#xa;sous seuil de déclenchement ABS." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f3edf7;strokeColor=#9673a6;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1420" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="I3-3" value="«requirement»&#xa;ABS-I3.3&#xa;Compatibilité BAS, ESC, TC&#xa;partageant le modulateur hydraulique." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f3edf7;strokeColor=#9673a6;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1500" width="200" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- I4 -->
+        <mxCell id="I4" value="«requirement»&#xa;I4 — Interface électrique &amp; bus véhicule" style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="680" y="1240" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I4-1" value="«requirement»&#xa;ABS-I4.1&#xa;Communication codes défauts sur bus CAN&#xa;via protocole OBD-II (ISO 15765-4)." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f3edf7;strokeColor=#9673a6;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="680" y="1340" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="I4-2" value="«requirement»&#xa;ABS-I4.2&#xa;Alimentation ECU + modulateur: ligne&#xa;dédiée fusible, 12V ±15%." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#f3edf7;strokeColor=#9673a6;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="680" y="1420" width="200" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== FAMILLE D ===================== -->
+        <mxCell id="FAM-D" value="«requirementPackage»&#xa;Famille D&#xa;Conception &amp; Contraintes" style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="1100" width="300" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- D1 -->
+        <mxCell id="D1" value="«requirement»&#xa;D1 — Architecture matérielle" style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="960" y="1240" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="D1-1" value="«requirement»&#xa;ABS-D1.1&#xa;ECU dédiée avec microcontrôleur&#xa;temps-réel conforme ABS-P2.1." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#eaf2ff;strokeColor=#6c8ebf;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="960" y="1340" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="D1-2" value="«requirement»&#xa;ABS-D1.2&#xa;Modulateur : min. 2 électrovannes&#xa;par canal (admission + retour)." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#eaf2ff;strokeColor=#6c8ebf;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="960" y="1420" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="D1-3" value="«requirement»&#xa;ABS-D1.3&#xa;Accumulateur basse pression + pompe&#xa;retour intégrés au modulateur." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#eaf2ff;strokeColor=#6c8ebf;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="960" y="1500" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="D1-4" value="«requirement»&#xa;ABS-D1.4&#xa;Intégration composants mécaniques&#xa;existants sans modification structurelle." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#eaf2ff;strokeColor=#6c8ebf;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="960" y="1580" width="200" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- D2 -->
+        <mxCell id="D2" value="«requirement»&#xa;D2 — Architecture logicielle &amp; algo" style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="1240" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="D2-1" value="«requirement»&#xa;ABS-D2.1&#xa;Algorithme contrôle non-linéaire&#xa;(logique floue / SMC / bang-bang amélioré)." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#eaf2ff;strokeColor=#6c8ebf;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="1340" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="D2-2" value="«requirement»&#xa;ABS-D2.2&#xa;Modèle friction LuGre ou Burckhardt&#xa;pour validation du contrôleur." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#eaf2ff;strokeColor=#6c8ebf;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="1420" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="D2-3" value="«requirement»&#xa;ABS-D2.3&#xa;Validation sur modèle Quarter-car&#xa;2 DDL (translation + rotation roue)." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#eaf2ff;strokeColor=#6c8ebf;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="1500" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="D2-4" value="«requirement»&#xa;ABS-D2.4&#xa;Architecture SW conforme AUTOSAR&#xa;ou RTOS à priorités fixes." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#eaf2ff;strokeColor=#6c8ebf;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="1580" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="D2-5" value="«requirement»&#xa;ABS-D2.5&#xa;Prévention tangage véhicule dû&#xa;aux vibrations du cyclage hydraulique." style="shape=mxgraph.sysml.req.requirement;whiteSpace=wrap;html=1;fillColor=#eaf2ff;strokeColor=#6c8ebf;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="1660" width="200" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== CONTAINMENT RELATIONS (ROOT → Familles) ===================== -->
+        <mxCell id="rel-root-f" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;strokeWidth=2;" edge="1" source="ABS-ROOT" target="FAM-F" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl-root-f" value="«containment»" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=8;" vertex="1" connectable="0" parent="rel-root-f">
+          <mxGeometry x="-0.1" relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel-root-p" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#d6b656;strokeWidth=2;" edge="1" source="ABS-ROOT" target="FAM-P" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl-root-p" value="«containment»" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=8;" vertex="1" connectable="0" parent="rel-root-p">
+          <mxGeometry x="-0.1" relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel-root-s" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#b85450;strokeWidth=2;" edge="1" source="ABS-ROOT" target="FAM-S" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl-root-s" value="«containment»" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=8;" vertex="1" connectable="0" parent="rel-root-s">
+          <mxGeometry x="-0.1" relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel-root-i" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#9673a6;strokeWidth=2;" edge="1" source="ABS-ROOT" target="FAM-I" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl-root-i" value="«containment»" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=8;" vertex="1" connectable="0" parent="rel-root-i">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel-root-d" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#6c8ebf;strokeWidth=2;" edge="1" source="ABS-ROOT" target="FAM-D" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl-root-d" value="«containment»" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=8;" vertex="1" connectable="0" parent="rel-root-d">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Familles → sous-familles (containment) -->
+        <mxCell id="r-f-f1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="FAM-F" target="F1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-f-f2" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="FAM-F" target="F2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-f-f3" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="FAM-F" target="F3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-f-f4" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="FAM-F" target="F4" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-f-f5" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="FAM-F" target="F5" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-f-f6" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="FAM-F" target="F6" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- F1 → leaves -->
+        <mxCell id="r-f1-1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="F1" target="F1-1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-f1-2" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="F1" target="F1-2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-f1-3" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="F1" target="F1-3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-f1-4" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="F1" target="F1-4" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-f1-5" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="F1" target="F1-5" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-f1-6" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="F1" target="F1-6" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- F2 → leaves -->
+        <mxCell id="r-f2-1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="F2" target="F2-1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-f2-2" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="F2" target="F2-2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-f2-3" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="F2" target="F2-3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- F3 → leaves -->
+        <mxCell id="r-f3-1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="F3" target="F3-1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-f3-2" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="F3" target="F3-2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-f3-3" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="F3" target="F3-3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- F4 → leaves -->
+        <mxCell id="r-f4-1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="F4" target="F4-1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-f4-2" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="F4" target="F4-2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-f4-3" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="F4" target="F4-3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- F5 → leaves -->
+        <mxCell id="r-f5-1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="F5" target="F5-1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-f5-2" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="F5" target="F5-2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-f5-3" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="F5" target="F5-3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- F6 → leaves -->
+        <mxCell id="r-f6-1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="F6" target="F6-1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-f6-2" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="F6" target="F6-2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-f6-3" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="F6" target="F6-3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-f6-4" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#82b366;" edge="1" source="F6" target="F6-4" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- FAM-P → P1, P2, P3 -->
+        <mxCell id="r-p-p1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#d6b656;" edge="1" source="FAM-P" target="P1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-p-p2" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#d6b656;" edge="1" source="FAM-P" target="P2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-p-p3" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#d6b656;" edge="1" source="FAM-P" target="P3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- P1,P2,P3 → leaves -->
+        <mxCell id="r-p1-1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#d6b656;" edge="1" source="P1" target="P1-1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-p1-2" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#d6b656;" edge="1" source="P1" target="P1-2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-p1-3" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#d6b656;" edge="1" source="P1" target="P1-3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-p2-1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#d6b656;" edge="1" source="P2" target="P2-1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-p2-2" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#d6b656;" edge="1" source="P2" target="P2-2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-p2-3" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#d6b656;" edge="1" source="P2" target="P2-3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-p3-1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#d6b656;" edge="1" source="P3" target="P3-1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-p3-2" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#d6b656;" edge="1" source="P3" target="P3-2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- FAM-S → S1, S2, S3 -->
+        <mxCell id="r-s-s1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#b85450;" edge="1" source="FAM-S" target="S1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-s-s2" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#b85450;" edge="1" source="FAM-S" target="S2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-s-s3" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#b85450;" edge="1" source="FAM-S" target="S3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- S1, S2, S3 → leaves -->
+        <mxCell id="r-s1-1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#b85450;" edge="1" source="S1" target="S1-1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-s1-2" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#b85450;" edge="1" source="S1" target="S1-2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-s1-3" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#b85450;" edge="1" source="S1" target="S1-3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-s1-4" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#b85450;" edge="1" source="S1" target="S1-4" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-s2-1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#b85450;" edge="1" source="S2" target="S2-1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-s2-2" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#b85450;" edge="1" source="S2" target="S2-2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-s2-3" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#b85450;" edge="1" source="S2" target="S2-3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-s3-1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#b85450;" edge="1" source="S3" target="S3-1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-s3-2" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#b85450;" edge="1" source="S3" target="S3-2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-s3-3" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#b85450;" edge="1" source="S3" target="S3-3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-s3-4" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#b85450;" edge="1" source="S3" target="S3-4" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-s3-5" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#b85450;" edge="1" source="S3" target="S3-5" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- FAM-I → I1, I2, I3, I4 -->
+        <mxCell id="r-i-i1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#9673a6;" edge="1" source="FAM-I" target="I1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-i-i2" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#9673a6;" edge="1" source="FAM-I" target="I2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-i-i3" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#9673a6;" edge="1" source="FAM-I" target="I3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-i-i4" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#9673a6;" edge="1" source="FAM-I" target="I4" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- I1,I2,I3,I4 → leaves -->
+        <mxCell id="r-i1-1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#9673a6;" edge="1" source="I1" target="I1-1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-i1-2" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#9673a6;" edge="1" source="I1" target="I1-2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-i1-3" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#9673a6;" edge="1" source="I1" target="I1-3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-i1-4" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#9673a6;" edge="1" source="I1" target="I1-4" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-i2-1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#9673a6;" edge="1" source="I2" target="I2-1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-i2-2" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#9673a6;" edge="1" source="I2" target="I2-2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-i2-3" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#9673a6;" edge="1" source="I2" target="I2-3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-i2-4" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#9673a6;" edge="1" source="I2" target="I2-4" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-i3-1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#9673a6;" edge="1" source="I3" target="I3-1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-i3-2" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#9673a6;" edge="1" source="I3" target="I3-2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-i3-3" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#9673a6;" edge="1" source="I3" target="I3-3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-i4-1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#9673a6;" edge="1" source="I4" target="I4-1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-i4-2" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#9673a6;" edge="1" source="I4" target="I4-2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- FAM-D → D1, D2 -->
+        <mxCell id="r-d-d1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#6c8ebf;" edge="1" source="FAM-D" target="D1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-d-d2" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#6c8ebf;" edge="1" source="FAM-D" target="D2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- D1, D2 → leaves -->
+        <mxCell id="r-d1-1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#6c8ebf;" edge="1" source="D1" target="D1-1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-d1-2" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#6c8ebf;" edge="1" source="D1" target="D1-2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-d1-3" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#6c8ebf;" edge="1" source="D1" target="D1-3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-d1-4" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#6c8ebf;" edge="1" source="D1" target="D1-4" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-d2-1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#6c8ebf;" edge="1" source="D2" target="D2-1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-d2-2" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#6c8ebf;" edge="1" source="D2" target="D2-2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-d2-3" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#6c8ebf;" edge="1" source="D2" target="D2-3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-d2-4" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#6c8ebf;" edge="1" source="D2" target="D2-4" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r-d2-5" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#6c8ebf;" edge="1" source="D2" target="D2-5" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- ===================== DERIVE CROSS-RELATIONS ===================== -->
+        <!-- P2.1 derives from D1.1 -->
+        <mxCell id="der-p21-d11" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#FF8C00;dashed=1;strokeWidth=1;" edge="1" source="P2-1" target="D1-1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl-der-p21" value="«deriveReqt»" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=7;fontColor=#FF8C00;" vertex="1" connectable="0" parent="der-p21-d11">
+          <mxGeometry x="-0.1" relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- S3.3 refines S3.2 -->
+        <mxCell id="ref-s33-s32" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#6600CC;dashed=1;strokeWidth=1;" edge="1" source="S3-3" target="S3-2" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl-ref-s33" value="«refine»" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=7;fontColor=#6600CC;" vertex="1" connectable="0" parent="ref-s33-s32">
+          <mxGeometry x="-0.1" relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- F1.3 refines F4.2 -->
+        <mxCell id="ref-f13-f42" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;strokeColor=#6600CC;dashed=1;strokeWidth=1;" edge="1" source="F1-3" target="F4-2" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl-ref-f13" value="«refine»" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=7;fontColor=#6600CC;" vertex="1" connectable="0" parent="ref-f13-f42">
+          <mxGeometry x="-0.1" relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== LEGEND ===================== -->
+        <mxCell id="legend-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="2700" y="100" width="340" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-title" value="LÉGENDE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="2700" y="105" width="340" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="leg-f" value="Famille F — Fonctionnelles" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=9;" vertex="1" parent="1"><mxGeometry x="2720" y="140" width="200" height="25" as="geometry"/></mxCell>
+        <mxCell id="leg-p" value="Famille P — Performance" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;fontSize=9;" vertex="1" parent="1"><mxGeometry x="2720" y="175" width="200" height="25" as="geometry"/></mxCell>
+        <mxCell id="leg-s" value="Famille S — Sécurité ISO 26262" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=9;" vertex="1" parent="1"><mxGeometry x="2720" y="210" width="200" height="25" as="geometry"/></mxCell>
+        <mxCell id="leg-i" value="Famille I — Interfaces" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;" vertex="1" parent="1"><mxGeometry x="2720" y="245" width="200" height="25" as="geometry"/></mxCell>
+        <mxCell id="leg-d" value="Famille D — Conception" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;" vertex="1" parent="1"><mxGeometry x="2720" y="280" width="200" height="25" as="geometry"/></mxCell>
+        <mxCell id="leg-cont" value="─── containment" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;" vertex="1" parent="1"><mxGeometry x="2720" y="315" width="150" height="20" as="geometry"/></mxCell>
+        <mxCell id="leg-derive" value="- - - «deriveReqt» / «refine»" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#FF8C00;" vertex="1" parent="1"><mxGeometry x="2720" y="340" width="220" height="20" as="geometry"/></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
