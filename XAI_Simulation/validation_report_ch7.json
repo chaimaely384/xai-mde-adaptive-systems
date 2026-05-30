@@ -1,0 +1,447 @@
+{
+  "chapter": "Chapitre 7 — Simulation and Validation",
+  "generated": "2026-05-29T01:50:27.537253",
+  "global": {
+    "total_scenarios": 12,
+    "total_cycles": 240,
+    "avg_ocl_confidence": 0.983,
+    "avg_improvement_pct": 18.0,
+    "scenarios_valid": 12,
+    "scenarios_high_risk": 3,
+    "avg_q_max": -0.2903
+  },
+  "scenarios": [
+    {
+      "id": "S01",
+      "name": "Freinage normal — Asphalte sec",
+      "description": "Freinage modéré sur route sèche à 80 km/h",
+      "road": "Asphalte sec",
+      "metrics": {
+        "avg_lambda": 0.0648,
+        "max_lambda": 0.1107,
+        "avg_mu": 0.8556,
+        "ocl_confidence": 0.993,
+        "q_max": -0.0666,
+        "stopping_dist_abs": 20.77,
+        "stopping_dist_no_abs": 25.33,
+        "improvement_pct": 18.0,
+        "total_cycles": 20,
+        "total_time_ms": 200.0
+      },
+      "actions": {
+        "Build": 17,
+        "Hold": 3,
+        "Release": 0
+      },
+      "risks": {
+        "LOW": 16,
+        "MEDIUM": 4,
+        "HIGH": 0
+      },
+      "violations": [
+        "C02"
+      ],
+      "validation": {
+        "abs_effective": true,
+        "ocl_global_ok": true,
+        "xai_coherent": true
+      }
+    },
+    {
+      "id": "S02",
+      "name": "Freinage urgence — Asphalte sec",
+      "description": "Freinage d'urgence à 100 km/h, pression max",
+      "road": "Asphalte sec",
+      "metrics": {
+        "avg_lambda": 0.0545,
+        "max_lambda": 0.1123,
+        "avg_mu": 0.7585,
+        "ocl_confidence": 0.989,
+        "q_max": -0.0642,
+        "stopping_dist_abs": 30.44,
+        "stopping_dist_no_abs": 37.12,
+        "improvement_pct": 18.0,
+        "total_cycles": 20,
+        "total_time_ms": 200.0
+      },
+      "actions": {
+        "Build": 17,
+        "Hold": 3,
+        "Release": 0
+      },
+      "risks": {
+        "LOW": 14,
+        "MEDIUM": 6,
+        "HIGH": 0
+      },
+      "violations": [
+        "C02"
+      ],
+      "validation": {
+        "abs_effective": true,
+        "ocl_global_ok": true,
+        "xai_coherent": true
+      }
+    },
+    {
+      "id": "S03",
+      "name": "Roue avant gauche bloquée",
+      "description": "Roue avant gauche en quasi-blocage (λ≈0.88)",
+      "road": "Asphalte sec",
+      "metrics": {
+        "avg_lambda": 0.7939,
+        "max_lambda": 0.88,
+        "avg_mu": 0.8673,
+        "ocl_confidence": 0.964,
+        "q_max": -0.8878,
+        "stopping_dist_abs": 31.76,
+        "stopping_dist_no_abs": 38.73,
+        "improvement_pct": 18.0,
+        "total_cycles": 20,
+        "total_time_ms": 200.0
+      },
+      "actions": {
+        "Build": 0,
+        "Hold": 0,
+        "Release": 20
+      },
+      "risks": {
+        "LOW": 0,
+        "MEDIUM": 2,
+        "HIGH": 18
+      },
+      "violations": [
+        "C02"
+      ],
+      "validation": {
+        "abs_effective": true,
+        "ocl_global_ok": true,
+        "xai_coherent": true
+      }
+    },
+    {
+      "id": "S04",
+      "name": "Roue arrière gauche bloquée",
+      "description": "Roue arrière gauche bloquée, risque dérapage",
+      "road": "Asphalte sec",
+      "metrics": {
+        "avg_lambda": 0.8135,
+        "max_lambda": 0.8919,
+        "avg_mu": 0.8571,
+        "ocl_confidence": 0.964,
+        "q_max": -0.927,
+        "stopping_dist_abs": 25.23,
+        "stopping_dist_no_abs": 30.77,
+        "improvement_pct": 18.0,
+        "total_cycles": 20,
+        "total_time_ms": 200.0
+      },
+      "actions": {
+        "Build": 0,
+        "Hold": 0,
+        "Release": 20
+      },
+      "risks": {
+        "LOW": 0,
+        "MEDIUM": 0,
+        "HIGH": 20
+      },
+      "violations": [
+        "C02"
+      ],
+      "validation": {
+        "abs_effective": true,
+        "ocl_global_ok": true,
+        "xai_coherent": true
+      }
+    },
+    {
+      "id": "S05",
+      "name": "Freinage asphalte mouillé",
+      "description": "Pluie — µ réduit à ≈0.65",
+      "road": "Asphalte mouillé",
+      "metrics": {
+        "avg_lambda": 0.0534,
+        "max_lambda": 0.136,
+        "avg_mu": 0.5699,
+        "ocl_confidence": 0.989,
+        "q_max": -0.062,
+        "stopping_dist_abs": 32.6,
+        "stopping_dist_no_abs": 39.76,
+        "improvement_pct": 18.0,
+        "total_cycles": 20,
+        "total_time_ms": 200.0
+      },
+      "actions": {
+        "Build": 17,
+        "Hold": 3,
+        "Release": 0
+      },
+      "risks": {
+        "LOW": 14,
+        "MEDIUM": 6,
+        "HIGH": 0
+      },
+      "violations": [
+        "C02"
+      ],
+      "validation": {
+        "abs_effective": true,
+        "ocl_global_ok": true,
+        "xai_coherent": true
+      }
+    },
+    {
+      "id": "S06",
+      "name": "Freinage sur verglas",
+      "description": "Route verglacée — µ≈0.05, glissement extrême",
+      "road": "Verglas",
+      "metrics": {
+        "avg_lambda": 0.064,
+        "max_lambda": 0.2814,
+        "avg_mu": 0.0426,
+        "ocl_confidence": 0.987,
+        "q_max": -0.0662,
+        "stopping_dist_abs": 234.44,
+        "stopping_dist_no_abs": 285.9,
+        "improvement_pct": 18.0,
+        "total_cycles": 20,
+        "total_time_ms": 200.0
+      },
+      "actions": {
+        "Build": 17,
+        "Hold": 3,
+        "Release": 0
+      },
+      "risks": {
+        "LOW": 0,
+        "MEDIUM": 20,
+        "HIGH": 0
+      },
+      "violations": [
+        "C02"
+      ],
+      "validation": {
+        "abs_effective": true,
+        "ocl_global_ok": true,
+        "xai_coherent": true
+      }
+    },
+    {
+      "id": "S07",
+      "name": "Freinage sur gravier",
+      "description": "Surface instable — µ variable ≈0.55",
+      "road": "Gravier",
+      "metrics": {
+        "avg_lambda": 0.055,
+        "max_lambda": 0.134,
+        "avg_mu": 0.2774,
+        "ocl_confidence": 0.989,
+        "q_max": -0.0647,
+        "stopping_dist_abs": 32.81,
+        "stopping_dist_no_abs": 40.01,
+        "improvement_pct": 18.0,
+        "total_cycles": 20,
+        "total_time_ms": 200.0
+      },
+      "actions": {
+        "Build": 17,
+        "Hold": 3,
+        "Release": 0
+      },
+      "risks": {
+        "LOW": 11,
+        "MEDIUM": 9,
+        "HIGH": 0
+      },
+      "violations": [
+        "C02"
+      ],
+      "validation": {
+        "abs_effective": true,
+        "ocl_global_ok": true,
+        "xai_coherent": true
+      }
+    },
+    {
+      "id": "S08",
+      "name": "Freinage basse vitesse",
+      "description": "Vitesse sous seuil ABS (1.38 m/s) — désactivation",
+      "road": "Asphalte sec",
+      "metrics": {
+        "avg_lambda": 0.0521,
+        "max_lambda": 0.1002,
+        "avg_mu": 0.8345,
+        "ocl_confidence": 0.995,
+        "q_max": -0.0279,
+        "stopping_dist_abs": 1.14,
+        "stopping_dist_no_abs": 1.39,
+        "improvement_pct": 18.0,
+        "total_cycles": 20,
+        "total_time_ms": 200.0
+      },
+      "actions": {
+        "Build": 19,
+        "Hold": 1,
+        "Release": 0
+      },
+      "risks": {
+        "LOW": 17,
+        "MEDIUM": 3,
+        "HIGH": 0
+      },
+      "violations": [
+        "C02"
+      ],
+      "validation": {
+        "abs_effective": true,
+        "ocl_global_ok": true,
+        "xai_coherent": true
+      }
+    },
+    {
+      "id": "S09",
+      "name": "Freinage haute vitesse",
+      "description": "Freinage autoroute à 130 km/h, pression max",
+      "road": "Asphalte sec",
+      "metrics": {
+        "avg_lambda": 0.0535,
+        "max_lambda": 0.1037,
+        "avg_mu": 0.7564,
+        "ocl_confidence": 0.989,
+        "q_max": -0.062,
+        "stopping_dist_abs": 54.41,
+        "stopping_dist_no_abs": 66.35,
+        "improvement_pct": 18.0,
+        "total_cycles": 20,
+        "total_time_ms": 200.0
+      },
+      "actions": {
+        "Build": 17,
+        "Hold": 3,
+        "Release": 0
+      },
+      "risks": {
+        "LOW": 14,
+        "MEDIUM": 6,
+        "HIGH": 0
+      },
+      "violations": [
+        "C02"
+      ],
+      "validation": {
+        "abs_effective": true,
+        "ocl_global_ok": true,
+        "xai_coherent": true
+      }
+    },
+    {
+      "id": "S10",
+      "name": "Blocage total 4 roues",
+      "description": "Toutes les roues quasi-bloquées (λ→0.93)",
+      "road": "Asphalte sec",
+      "metrics": {
+        "avg_lambda": 0.9069,
+        "max_lambda": 0.9459,
+        "avg_mu": 0.8085,
+        "ocl_confidence": 0.964,
+        "q_max": -1.1139,
+        "stopping_dist_abs": 26.13,
+        "stopping_dist_no_abs": 31.87,
+        "improvement_pct": 18.0,
+        "total_cycles": 20,
+        "total_time_ms": 200.0
+      },
+      "actions": {
+        "Build": 0,
+        "Hold": 0,
+        "Release": 20
+      },
+      "risks": {
+        "LOW": 0,
+        "MEDIUM": 0,
+        "HIGH": 20
+      },
+      "violations": [
+        "C02"
+      ],
+      "validation": {
+        "abs_effective": true,
+        "ocl_global_ok": true,
+        "xai_coherent": true
+      }
+    },
+    {
+      "id": "S11",
+      "name": "Aquaplaning",
+      "description": "Film d'eau — perte d'adhérence soudaine µ≈0.10",
+      "road": "Aquaplaning",
+      "metrics": {
+        "avg_lambda": 0.1243,
+        "max_lambda": 0.4,
+        "avg_mu": 0.0706,
+        "ocl_confidence": 0.982,
+        "q_max": -0.0724,
+        "stopping_dist_abs": 326.52,
+        "stopping_dist_no_abs": 398.19,
+        "improvement_pct": 18.0,
+        "total_cycles": 20,
+        "total_time_ms": 200.0
+      },
+      "actions": {
+        "Build": 13,
+        "Hold": 3,
+        "Release": 4
+      },
+      "risks": {
+        "LOW": 0,
+        "MEDIUM": 20,
+        "HIGH": 0
+      },
+      "violations": [
+        "C02"
+      ],
+      "validation": {
+        "abs_effective": true,
+        "ocl_global_ok": true,
+        "xai_coherent": true
+      }
+    },
+    {
+      "id": "S12",
+      "name": "Freinage en virage",
+      "description": "Charge asymétrique en virage — λ différent par roue",
+      "road": "Asphalte mouillé",
+      "metrics": {
+        "avg_lambda": 0.0581,
+        "max_lambda": 0.1495,
+        "avg_mu": 0.5748,
+        "ocl_confidence": 0.989,
+        "q_max": -0.0694,
+        "stopping_dist_abs": 19.67,
+        "stopping_dist_no_abs": 23.99,
+        "improvement_pct": 18.0,
+        "total_cycles": 20,
+        "total_time_ms": 200.0
+      },
+      "actions": {
+        "Build": 17,
+        "Hold": 3,
+        "Release": 0
+      },
+      "risks": {
+        "LOW": 14,
+        "MEDIUM": 6,
+        "HIGH": 0
+      },
+      "violations": [
+        "C02"
+      ],
+      "validation": {
+        "abs_effective": true,
+        "ocl_global_ok": true,
+        "xai_coherent": true
+      }
+    }
+  ]
+}
