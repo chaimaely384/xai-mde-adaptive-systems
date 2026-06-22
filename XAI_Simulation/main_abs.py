@@ -1,5 +1,5 @@
 
-from abs_xai_chapter6 import (
+from abs_xai import (
     ABSDecisionEngine,
     TraceabilityLogger,
     RoadCondition,
